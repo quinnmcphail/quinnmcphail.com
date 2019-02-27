@@ -16,7 +16,7 @@ module.exports = {
   userTwitter: '@quinnmcphail', // Twitter Username
   ogSiteName: 'quinnmcphail', // Facebook Site Name
   ogLanguage: 'en_US', // Facebook Language
-  googleAnalyticsID: '',
+  googleAnalyticsID: 'UA-116100020-2',
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
