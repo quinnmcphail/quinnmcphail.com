@@ -44,7 +44,7 @@ const Avatar = styled(GatsbyImage)`
 `
 
 const AboutSub = styled.span`
-  ${tw`text-white lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  ${tw`text-white lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl font-serif`};
 `
 
 const AboutSubCont = styled.div`
