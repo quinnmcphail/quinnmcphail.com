@@ -5,7 +5,7 @@ module.exports = {
 
   siteTitle: 'Quinn McPhail', // Navigation and Site Title
   siteTitleAlt: 'Quinn McPhail', // Alternative Site title for SEO
-  siteTitleShort: 'Quinn McPhail', // short_name for manifest
+  siteTitleShort: 'Quinn', // short_name for manifest
   siteHeadline: 'Salesforce Consultant and Web Dev Nerd', // Headline for schema.org JSONLD
   siteUrl: 'https://quinnmcphail.netlify.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
