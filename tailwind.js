@@ -25,7 +25,7 @@ View the full documentation at https://tailwindcss.com.
 */
 
 // eslint-disable-next-line
-const defaultConfig = require('tailwindcss/defaultConfig')();
+const defaultConfig = require('tailwindcss/defaultConfig')()
 
 /*
 |-------------------------------------------------------------------------------
@@ -209,7 +209,7 @@ module.exports = {
       'sans-serif',
     ],
     serif: [
-      'Cantata One',
+      'Aleo',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
