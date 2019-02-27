@@ -1,9 +1,11 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { Parallax } from 'react-spring/renderprops-addons.cjs'
 
 // Components
+import GatsbyImage from 'gatsby-image'
 import Layout from '../components/Layout'
 // import ProjectCard from '../components/ProjectCard'
 
@@ -17,7 +19,7 @@ import Hero from '../views/Hero'
 import About from '../views/About'
 import Contact from '../views/Contact'
 
-import avatar from '../images/logo.png'
+// import avatar from '../images/logo.png'
 
 // const ProjectsWrapper = styled.div`
 //   ${tw`flex flex-wrap justify-between mt-8`};
@@ -37,12 +39,16 @@ const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
 `
 
-const Avatar = styled.img`
+const Avatar = styled(GatsbyImage)`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
 `
 
 const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  ${tw`text-white lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+`
+
+const AboutSubCont = styled.div`
+  ${tw`flex flex-col items-center`};
 `
 
 const AboutDesc = styled.p`
@@ -57,7 +63,7 @@ const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `
 
-const Index = () => (
+const Index = props => (
   <>
     <Layout />
     <Parallax pages={3}>
@@ -103,11 +109,12 @@ const Index = () => (
       <About offset={1}>
         <Title>About</Title>
         <AboutHero>
-          <Avatar src={avatar} alt="John Doe" />
-          <AboutSub>
-            Dreamforce 2018 Student Group Leader | Salesforce Contract Consultant at CleanSlate | Certified Salesforce
-            Administrator
-          </AboutSub>
+          <Avatar fluid={props.data.avatar.childImageSharp.fluid} alt="Quinn McPhail" />
+          <AboutSubCont>
+            <AboutSub>Dreamforce 2018 Student Group Leader</AboutSub>
+            <AboutSub>Salesforce Contract Consultant at CleanSlate</AboutSub>
+            <AboutSub>Certified Salesforce Administrator</AboutSub>
+          </AboutSubCont>
         </AboutHero>
         <AboutDesc>
           Salesforce Developer specializing in Lightning Web Components. I am a huge web dev nerd interested in React,
@@ -133,3 +140,15 @@ const Index = () => (
 )
 
 export default Index
+
+export const pageQuery = graphql`
+  query {
+    avatar: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
