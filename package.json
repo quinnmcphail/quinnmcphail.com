@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
-  "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "name": "quinnmcphail-site",
+  "description": "Quinn McPhail's Personal Website",
+  "version": "1.0.0",
+  "author": "Quinn McPhail <quinnmcphail@me.com> (https://quinnmcphail.com)",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -28,11 +28,6 @@
     "typeface-cantata-one": "^0.0.54",
     "typeface-open-sans": "^0.0.54"
   },
-  "keywords": [
-    "gatsby",
-    "starter",
-    "portfolio"
-  ],
   "scripts": {
     "dev": "gatsby develop -o",
     "develop": "gatsby develop",
@@ -51,13 +46,5 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4"
-  },
-  "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
-    "type": "git"
-  },
-  "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
-  },
-  "homepage": "https://cara.lekoarts.de"
+  }
 }
