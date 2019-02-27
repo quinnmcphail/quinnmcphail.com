@@ -127,6 +127,7 @@ const Index = props => (
           <Title>Get in touch</Title>
           <ContactText>
             Say <a href="mailto:quinnmcphail@me.com">Hi</a> or find me on other platforms:{' '}
+            <a href="https://linkedin.com/in/quinnmcphail/">LinkedIn</a> ,{' '}
             <a href="https://twitter.com/quinnmcphail">Twitter</a> ,{' '}
             <a href="https://github.com/quinnmcphail">GitHub</a> ,{' '}
             <a href="https://success.salesforce.com/ProfileView?u=0053000000BniNxAAJ">Trailblazer Community</a>,{' '}
