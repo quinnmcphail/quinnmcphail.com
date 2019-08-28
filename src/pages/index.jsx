@@ -111,8 +111,9 @@ const Index = props => (
         <AboutHero>
           <Avatar fluid={props.data.avatar.childImageSharp.fluid} alt="Quinn McPhail" />
           <AboutSubCont>
+            <AboutSub>Salesforce Lightning App Dev Champion</AboutSub>
             <AboutSub>Dreamforce 2018 Student Group Leader</AboutSub>
-            <AboutSub>Salesforce Contract Consultant at CleanSlate</AboutSub>
+            <AboutSub>Frontend Developer at 7Summits</AboutSub>
             <AboutSub>Certified Salesforce Administrator</AboutSub>
           </AboutSubCont>
         </AboutHero>
